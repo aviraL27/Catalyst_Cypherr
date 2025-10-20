@@ -20,5 +20,5 @@ It’s a project made with care, teamwork, and the belief that small digital imp
 
 ---
 
-🔗 **Live Site:** [catalyst-cypher.vercel.app](https://catalyst-cypher.vercel.app/)  
+
 👥 **Team:** Cypher
