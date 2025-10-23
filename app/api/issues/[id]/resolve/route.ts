@@ -22,7 +22,7 @@ export async function POST(request: NextRequest, { params }: { params: { id: str
     const notification = addNotification(
       issue.email,
       issueId,
-      `Your issue "${issue.category}" has been resolved. We appreciate your patience!`,
+      `Your issue in ${issue.category} has been resolved. We appreciate your patience!`,
     )
 
     console.log("Issue resolved:", updatedIssue)

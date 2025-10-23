@@ -170,11 +170,14 @@ export default function IssueModal({ isOpen, onClose, preselectedCategory }: Iss
               } as React.CSSProperties
             }
           >
-            <option value="">Category</option>
-            <option>Academics</option>
-            <option>Hostel</option>
-            <option>Support</option>
-            <option>Other</option>
+            <option value="" style={{ color: "white", background: "#1a1a1a" }}>
+              Category
+            </option>
+            <option style={{ color: "white", background: "#1a1a1a" }}>Academics</option>
+            <option style={{ color: "white", background: "#1a1a1a" }}>Hostel</option>
+            <option style={{ color: "white", background: "#1a1a1a" }}>Medical</option>
+            <option style={{ color: "white", background: "#1a1a1a" }}>Support</option>
+            <option style={{ color: "white", background: "#1a1a1a" }}>Other</option>
           </select>
 
           <select
@@ -195,10 +198,12 @@ export default function IssueModal({ isOpen, onClose, preselectedCategory }: Iss
               } as React.CSSProperties
             }
           >
-            <option value="">Urgency</option>
-            <option>Low</option>
-            <option>Medium</option>
-            <option>High</option>
+            <option value="" style={{ color: "white", background: "#1a1a1a" }}>
+              Urgency
+            </option>
+            <option style={{ color: "white", background: "#1a1a1a" }}>Low</option>
+            <option style={{ color: "white", background: "#1a1a1a" }}>Medium</option>
+            <option style={{ color: "white", background: "#1a1a1a" }}>High</option>
           </select>
 
           <textarea

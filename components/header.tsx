@@ -6,13 +6,15 @@ import Image from "next/image"
 interface HeaderProps {
   currentPage: string
   onNavigate: (page: any) => void
+  onLogout?: () => void
 }
 
-export default function Header({ currentPage, onNavigate }: HeaderProps) {
+export default function Header({ currentPage, onNavigate, onLogout }: HeaderProps) {
   const navItems = [
     { href: "home", label: "Home" },
     { href: "academics", label: "Academics" },
     { href: "hostel", label: "Hostel" },
+    { href: "medical", label: "Medical" },
     { href: "support", label: "Support" },
     { href: "about", label: "About" },
   ]
@@ -88,6 +90,24 @@ export default function Header({ currentPage, onNavigate }: HeaderProps) {
         >
           Admin
         </Link>
+        {onLogout && (
+          <button
+            onClick={onLogout}
+            style={{
+              background: "linear-gradient(90deg, rgba(239, 68, 68, 0.2), rgba(220, 38, 38, 0.2))",
+              border: "1px solid rgba(239, 68, 68, 0.3)",
+              color: "rgba(255, 255, 255, 0.9)",
+              padding: "8px 12px",
+              borderRadius: "10px",
+              transition: "all 0.18s",
+              fontWeight: 600,
+              cursor: "pointer",
+              display: "inline-block",
+            }}
+          >
+            Logout
+          </button>
+        )}
       </nav>
     </header>
   )

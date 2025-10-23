@@ -69,7 +69,7 @@ export function NotificationsPanel({ studentEmail }: { studentEmail: string }) {
           </CardContent>
         </Card>
       ) : (
-        <div className="space-y-3">
+        <div className="space-y-4">
           {notifications.map((notification) => (
             <Card
               key={notification.id}
@@ -77,24 +77,29 @@ export function NotificationsPanel({ studentEmail }: { studentEmail: string }) {
                 notification.read ? "bg-slate-800/30" : "bg-slate-800/50 border-blue-500/50"
               }`}
             >
-              <CardHeader className="pb-3">
-                <div className="flex items-start justify-between">
-                  <div className="flex-1">
+              <CardHeader className="pb-4">
+                <div className="space-y-3">
+                  {/* Message section */}
+                  <div>
                     <CardTitle className="text-base text-white">{notification.message}</CardTitle>
-                    <CardDescription className="text-slate-400">
+                    <CardDescription className="text-slate-400 mt-2">
                       {new Date(notification.createdAt).toLocaleDateString()} at{" "}
                       {new Date(notification.createdAt).toLocaleTimeString()}
                     </CardDescription>
                   </div>
+
+                  {/* Mark Read button - on separate row */}
                   {!notification.read && (
-                    <Button
-                      size="sm"
-                      variant="outline"
-                      onClick={() => handleMarkAsRead(notification.id)}
-                      className="ml-2"
-                    >
-                      Mark Read
-                    </Button>
+                    <div className="pt-2">
+                      <Button
+                        size="sm"
+                        variant="outline"
+                        onClick={() => handleMarkAsRead(notification.id)}
+                        className="bg-blue-600/20 border-blue-500 text-blue-400 hover:bg-blue-600/30"
+                      >
+                        Mark as Read
+                      </Button>
+                    </div>
                   )}
                 </div>
               </CardHeader>

@@ -12,47 +12,54 @@ export default function MessMenuModal({ isOpen, onClose }: MessMenuModalProps) {
 
   const messMenu = {
     Monday: {
-      breakfast: ["Idli", "Sambar", "Chutney", "Tea", "Coffee", "Milk", "Juice"],
-      lunch: ["Rice", "Dal Fry", "Chicken Curry", "Salad", "Lassi", "Buttermilk"],
-      snacks: ["Pakora", "Tea", "Coffee", "Biscuits", "Lemonade"],
-      dinner: ["Roti", "Paneer Butter Masala", "Rice", "Pickle", "Buttermilk", "Lassi"],
+      breakfast: ["Idli", "Sambhar", "Chutney", "Milk", "Tea and Coffee Powder", "Sugar"],
+      lunch: ["Aloo Matar", "Dal Tadka", "Chapati", "Rice Normal", "Salad", "Achar", "Papad"],
+      snacks: ["Kanda Bhajiya", "French Fries (Masala)", "Tea"],
+      dinner: ["Patodi", "Chana Dal", "Jeera Fried Rice", "Chach"],
     },
     Tuesday: {
-      breakfast: ["Dosa", "Sambar", "Chutney", "Tea", "Coffee", "Milk", "Juice"],
-      lunch: ["Rice", "Rajma", "Aloo Gobi", "Salad", "Lassi", "Buttermilk"],
-      snacks: ["Vada", "Tea", "Coffee", "Biscuits", "Lemonade"],
-      dinner: ["Roti", "Chole Bhature", "Salad", "Pickle", "Buttermilk", "Lassi"],
+      breakfast: ["Aalu Paratha", "Milk", "Tea and Coffee Powder", "Sugar", "Bread", "Butter", "Jam"],
+      lunch: ["Desi Chana Gravy", "Dal", "Chapati", "Matar Rice", "Curd", "Salad", "Papad", "Achar"],
+      snacks: ["Poha-Sev", "Tea"],
+      dinner: ["White Mattar Sazi", "Dal Makhni", "Rice", "Salad", "Achar", "Thecha", "Sprouts", "Halwa/Fruit Custard"],
     },
     Wednesday: {
-      breakfast: ["Poha", "Jalebi", "Tea", "Coffee", "Milk", "Juice"],
-      lunch: ["Rice", "Sambar", "Vegetable Curry", "Salad", "Lassi", "Buttermilk"],
-      snacks: ["Chikhalwali", "Tea", "Coffee", "Biscuits", "Lemonade"],
-      dinner: ["Roti", "Egg Curry", "Rice", "Pickle", "Buttermilk", "Lassi"],
+      breakfast: ["Uttapam", "Sambhar", "Chutney", "Milk", "Tea and Coffee Powder", "Sugar", "Bread", "Butter", "Jam"],
+      lunch: ["Kadi Pakoda", "Sem Aalu", "Chapati", "Dal Tadka", "Veg Pulao", "Salad", "Achar", "Papad"],
+      snacks: ["Pani Puri", "Dhokla", "Tea"],
+      dinner: ["Paneer Mattr", "Jeera Rice", "Salad", "Achar"],
     },
     Thursday: {
-      breakfast: ["Upma", "Chutney", "Tea", "Coffee", "Milk", "Juice"],
-      lunch: ["Rice", "Lentil Soup", "Fish Curry", "Salad", "Lassi", "Buttermilk"],
-      snacks: ["Murukku", "Tea", "Coffee", "Biscuits", "Lemonade"],
-      dinner: ["Roti", "Mutton Curry", "Rice", "Pickle", "Buttermilk", "Lassi"],
+      breakfast: ["Aloo Puri", "Bread", "Butter", "Jam", "Tea and Coffee Powder", "Sugar", "Milk"],
+      lunch: ["Soya Wadi", "Massori Dal", "Rice Normal", "Chapati", "Salad", "Achar"],
+      snacks: ["Sabu Dana", "Vada Pav", "Hari and Lal Chutney", "Tea"],
+      dinner: ["Sukhe Chane", "Sambhar/Kadhi", "Rice", "Chapati", "Achar", "Salad", "Dahi", "Rasgulla/Gulab Jamun"],
     },
     Friday: {
-      breakfast: ["Puri", "Aloo Sabzi", "Tea", "Coffee", "Milk", "Juice"],
-      lunch: ["Rice", "Dal Makhani", "Paneer Tikka", "Salad", "Lassi", "Buttermilk"],
-      snacks: ["Samosa", "Tea", "Coffee", "Biscuits", "Lemonade"],
-      dinner: ["Roti", "Biryani", "Raita", "Pickle", "Buttermilk", "Lassi"],
+      breakfast: ["Vada", "Sambhar", "Chutney", "Milk", "Tea and Coffee Powder", "Sugar", "Bread", "Butter", "Jam"],
+      lunch: ["Rajma Curry", "Moong Dal", "Veg-Biryani", "Tomato Rice", "Chapati", "Salad", "Achar"],
+      snacks: ["Samosa", "Bread-Pakoda", "Tea"],
+      dinner: ["Chole Masala", "Mix Dal", "Chapati", "Salad", "Achar", "Papad", "Chach"],
     },
     Saturday: {
-      breakfast: ["Paratha", "Pickle", "Tea", "Coffee", "Milk", "Juice"],
-      lunch: ["Rice", "Chole", "Aloo Curry", "Salad", "Lassi", "Buttermilk"],
-      snacks: ["Jalebi", "Tea", "Coffee", "Biscuits", "Lemonade"],
-      dinner: ["Roti", "Tandoori Chicken", "Rice", "Pickle", "Buttermilk", "Lassi"],
+      breakfast: ["Poha", "Chana Curry", "Tea and Coffee Powder", "Bread", "Butter", "Jam", "Milk", "Sprouts"],
+      lunch: ["Sprouts Sabzi", "Matar Rice", "Salad", "Achar", "Papad", "Tomato Rice", "Raita"],
+      snacks: ["Fried Rice", "Maggi", "Tea"],
+      dinner: ["Sev Bhaji", "Dal Makhni", "Paratha", "Chapati", "Salad", "Achar", "Thecha"],
     },
     Sunday: {
-      breakfast: ["Pancake", "Syrup", "Tea", "Coffee", "Milk", "Juice"],
-      lunch: ["Rice", "Sambar", "Vegetable Fry", "Salad", "Lassi", "Buttermilk"],
-      snacks: ["Cake", "Tea", "Coffee", "Biscuits", "Lemonade"],
-      dinner: ["Roti", "Butter Chicken", "Rice", "Pickle", "Buttermilk", "Lassi"],
+      breakfast: ["Dosa", "Sambhar", "Chutney", "Milk", "Tea and Coffee Powder", "Sugar", "Bread", "Butter", "Jam"],
+      lunch: ["Chhole-Puri", "Rice", "Moong Dal", "Jeera Rice", "Chapati", "Salad", "Achar"],
+      snacks: ["Oreo-Biscuits", "Chips", "Cupcake", "Donut", "Tea"],
+      dinner: ["Dal Fry", "Paneer Butter Masala", "Chapati", "Salad", "Achar", "Boondi Raita", "Ice Cream/Rasmalai"],
     },
+  }
+
+  const mealTimings = {
+    breakfast: "7:30 - 9:30",
+    lunch: "12:00 - 14:00",
+    snacks: "17:30 - 18:30",
+    dinner: "19:30 - 21:30",
   }
 
   if (!isOpen) return null
@@ -81,9 +88,9 @@ export default function MessMenuModal({ isOpen, onClose }: MessMenuModalProps) {
           backgroundColor: "white",
           borderRadius: "12px",
           padding: "32px",
-          maxWidth: "600px",
+          maxWidth: "700px",
           width: "90%",
-          maxHeight: "80vh",
+          maxHeight: "85vh",
           overflowY: "auto",
           boxShadow: "0 20px 60px rgba(0, 0, 0, 0.3)",
         }}
@@ -103,6 +110,13 @@ export default function MessMenuModal({ isOpen, onClose }: MessMenuModalProps) {
           >
             ✕
           </button>
+        </div>
+
+        <div style={{ backgroundColor: "#f0f9ff", padding: "12px 16px", borderRadius: "8px", marginBottom: "20px" }}>
+          <p style={{ margin: 0, fontSize: "13px", color: "#1e40af", fontWeight: "500" }}>
+            <strong>Meal Timings:</strong> Breakfast {mealTimings.breakfast} | Lunch {mealTimings.lunch} | Snacks{" "}
+            {mealTimings.snacks} | Dinner {mealTimings.dinner}
+          </p>
         </div>
 
         {/* Day Selector */}
@@ -213,6 +227,13 @@ export default function MessMenuModal({ isOpen, onClose }: MessMenuModalProps) {
               ))}
             </ul>
           </div>
+        </div>
+
+        <div style={{ marginTop: "20px", padding: "12px 16px", backgroundColor: "#f3f4f6", borderRadius: "8px" }}>
+          <p style={{ margin: 0, fontSize: "12px", color: "#6b7280" }}>
+            <strong>Note:</strong> Coffee is served daily from 5:30 PM - 5:50 PM. Sunday timings: Breakfast 8:00-10:00
+            AM, Lunch 12:00-2:00 PM, Snacks 5:30-6:30 PM, Dinner 7:30-9:30 PM
+          </p>
         </div>
       </div>
     </div>
