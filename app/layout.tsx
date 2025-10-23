@@ -7,9 +7,9 @@ import { Toaster } from "@/components/ui/toaster"
 const inter = Inter({ subsets: ["latin"] })
 
 export const metadata: Metadata = {
-  title: "Catalyst — IIIT Nagpur Student Portal",
-  description: "Catalyst - student portal for IIIT Nagpur. Sections for academics, hostel, support, and more.",
-    generator: 'v0.app'
+  title: "",
+  description: "",
+    generator: ""
 }
 
 export default function RootLayout({
