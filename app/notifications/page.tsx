@@ -51,16 +51,6 @@ export default function NotificationsPage() {
         ) : (
           <div>
             <NotificationsPanel studentEmail={studentEmail} />
-            <Button
-              variant="outline"
-              onClick={() => {
-                setSubmitted(false)
-                setStudentEmail("")
-              }}
-              className="mt-6"
-            >
-              Change Email
-            </Button>
           </div>
         )}
       </div>

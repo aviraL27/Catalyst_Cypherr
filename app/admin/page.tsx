@@ -139,6 +139,7 @@ export default function AdminDashboard() {
     const colors: Record<string, string> = {
       academic: "bg-blue-500/20 text-blue-300",
       hostel: "bg-purple-500/20 text-purple-300",
+      medical: "bg-red-500/20 text-red-300",
       infrastructure: "bg-green-500/20 text-green-300",
       other: "bg-gray-500/20 text-gray-300",
     }
@@ -201,23 +202,13 @@ export default function AdminDashboard() {
         {activeTab === "issues" && (
           <>
             {/* Stats */}
-            <div className="grid grid-cols-4 gap-4 mb-8">
+            <div className="grid grid-cols-3 gap-4 mb-8">
               <Card className="bg-slate-800/50 border-slate-700">
                 <CardHeader className="pb-2">
                   <CardTitle className="text-sm font-medium text-slate-400">Total Issues</CardTitle>
                 </CardHeader>
                 <CardContent>
                   <div className="text-2xl font-bold text-white">{issues.length}</div>
-                </CardContent>
-              </Card>
-              <Card className="bg-slate-800/50 border-slate-700">
-                <CardHeader className="pb-2">
-                  <CardTitle className="text-sm font-medium text-slate-400">Critical</CardTitle>
-                </CardHeader>
-                <CardContent>
-                  <div className="text-2xl font-bold text-red-400">
-                    {issues.filter((i) => i.urgency === "critical").length}
-                  </div>
                 </CardContent>
               </Card>
               <Card className="bg-slate-800/50 border-slate-700">
